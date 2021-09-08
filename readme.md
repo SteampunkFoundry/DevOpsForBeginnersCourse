@@ -4,7 +4,7 @@
 
 ## Table of Contents
 + Prerequisites
-    + Installing IntelliJ
+    + Installing IntelliJ 
     + Creating a GitHub Account
     + Connecting Git to IntelliJ
     + Creating a Repository
@@ -14,14 +14,12 @@
 + Local Setup
     + Install AWS CLI
     + Configure AWS CLI access
-    + Install Wireguard
-    + Configure Wireguard access
-    + Obtaining an CLI Key and Wireguard *add a link* //AN
+    + Install Wireguard and Configure Access
 
 + Terraform
     + Install and configure Terraform on your machine
     + Create a Terraform project
-    + Create a ssh key with AWS CLI
+    + Create a ssh Key with AWS CLI
     + Connecting to Your Instance
 
 + Ansible and Java
