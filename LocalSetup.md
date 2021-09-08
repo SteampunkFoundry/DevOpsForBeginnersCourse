@@ -23,7 +23,7 @@
    + https://jenkins.dhsice.name/login
    + https://nexus.dhsice.name
 
-##Creating a CLI Key 
+## Creating a CLI Key 
 To ssh onto the instance, we are going to create a key. This key should remain in your .ssh folder. _**DO NOT UPLOAD THIS INTO YOUR GIT REPOSITORY IF YOUR KEY IS IN YOUR DIRECTORY**_
 1. To create a key: `aws ec2 create-key-pair --key-name rgooney-key --tag-specifications  "ResourceType=key-pair,Tags=[{Key=CreatorName,Value=rgooney}]" --output text > aws-key.pem `
 2. For more information on how to create a key

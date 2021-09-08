@@ -1,5 +1,5 @@
-#Terraform
-##Install and configure Terraform on your machine
+# Terraform
+## Install and configure Terraform on your machine
 Terraform is
 Before completing this step please review the following documents: https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started
 1. Install Chocolately (https://chocolatey.org/install)
@@ -13,7 +13,7 @@ Before completing this step please review the following documents: https://learn
 5. Type `Y` hit enter to finish the install
 6. To verify that terraform is installed, run the command: `terraform -help`
 
-##Create a Terraform project
+## Create a Terraform project
 1. On IntelliJ in your DevOps project, right click the “README” file and hover over “New”, hit “File”. Name this file “main.tf’
 2. Change the highlighted portion of the below code, to your name. This code will still run if you don’t do this, but it’s important to change the variables. THEN:Copy the following into your new “main.tf” file:
   ```terraform

@@ -56,14 +56,14 @@ The key's randomart image is:
 14. Upon completion, you will need to enter your password to confirm
 15. On IntelliJ, you should see on the bottom left a tab that says “Git”, as well as the top header a tab that says “Git”, and on the middle left tabs that say “Commit” and “Pull Requests”
 
-##Creating a Repository
+## Creating a Repository
 1. Go to https://github.com/SteampunkFoundry and hit “New”
 2. Call your repository:  `DevOpsforBeginners-[YOUR NAME]`
 3. Make your repository public
 4. Select the `Add a README.md file`
 5. Hit “Create repository”
 
-##Cloning a Repository
+## Cloning a Repository
 1. Go to https://github.com/SteampunkFoundry/DevOpsforBeginners-[YOURNAME]
 2. On the Code drop down menu, hit SSH and copy the text.
 3. On your IDE, open the terminal on the bottom. 
