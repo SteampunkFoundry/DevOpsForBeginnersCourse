@@ -1,6 +1,5 @@
 # Terraform
 ## Install and configure Terraform on your machine
-Terraform is
 Before completing this step please review the following documents: https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started
 1. Install Chocolately (https://chocolatey.org/install)
     + Open Powershell as an administrator
