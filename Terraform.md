@@ -14,8 +14,8 @@ Before completing this step please review the following documents: https://learn
 
 ## Create a Terraform project
 1. On IntelliJ in your DevOps project, right click the “README” file and hover over “New”, hit “File”. Name this file “main.tf’
-2. Change the highlighted portion of the below code, to your name. This code will still run if you don’t do this, but it’s important to change the variables. THEN:Copy the following into your new “main.tf” file:
-  ```terraform
+2. Change the highlighted portion of the below code, to your name. This code will still run if you don’t do this, but it’s important to change the variables. THEN: Copy the following into your new “main.tf” file:
+  ```hcl
   terraform {
    required_providers {
    aws = {
@@ -39,7 +39,7 @@ subnet_id = "subnet-0f83fd875df60928a"
 
 tags = {
 Name = "[your name]-test-instance"
-CreatorName = [aws username *given with your key*]
+CreatorName = [aws_username_*given with your key*]
 }
 }
 ````
