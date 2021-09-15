@@ -12,8 +12,8 @@
 3. Run the code: `aws ec2 describe-instances --output text`
     + The output should be a long list of instances
 4. Errors can look like the following:
-   + *screenshot one*
-   + *screenshot two*
+   + ![error 1](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/awsKeyError1.png)
+   + ![error 2](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/master/imgs/awsKeyError2.png)
 
 ## Install Wireguard and Configure Access
 1. Download and install WireGuard: https://www.wireguard.com/install/
