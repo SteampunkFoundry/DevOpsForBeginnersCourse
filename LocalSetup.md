@@ -38,4 +38,3 @@ with anyone, as they give the user access to our private cloud in AWS.
    + https://jenkins.dhsice.name/login
    + https://nexus.dhsice.name
    
-
