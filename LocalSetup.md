@@ -27,8 +27,8 @@ AWS_SECRET_ACCESS_KEY.
    + If configured successfully, the output should be a long list of 
    instances
 6. Errors can look like the following:
-   + *screenshot one*
-   + *screenshot two*
+   + ![error 1](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/awsKeyError1.png)
+   + ![error 2](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/master/imgs/awsKeyError2.png)
 
 ### WireGuard 
 
