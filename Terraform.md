@@ -2,7 +2,7 @@
 
 ## Overview
 
-TODO : description of Terraform and use for infrastructure as code 
+Terraform is a language that helps set up environments and the features run on that environment.
 
 Begin by reviewing the following guide on using Terraform with AWS: 
 https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started
@@ -14,16 +14,28 @@ https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraf
 1. Install Chocolately (https://chocolatey.org/install)
     + Open Powershell as an administrator
     + Run the following command: `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
-
+   [install1](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/chocolatey1.png)
 2. Run the command: `choco`
+   [choco](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/chocolatey2.png)
 3. Run the command: `choco feature enable -n useFipsCompliantChecksums`
+   [feature](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/chocolatey3.png)
 4. Run the command: `choco install terraform`
+   [install2](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/chocolatey4.png)
 5. Type `Y` hit enter to finish the install
 6. To verify that terraform is installed, run the command: `terraform -help`
+   [verifying](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/chocolatey5.png)
 
 ### MacOS and Linux Terraform Setup 
 
-TODO MacOS and Linux steps 
+1.  run the command: 'brew tap hashicorp/tap'
+   + this installs HashiCorp
+2. run the command: 'brew install hashicorp/tap/terraform'
+   + this installs terraform
+3. run the command: 'brew update'
+   + this updates Terraform
+4. run the command: 'brew upgrade hashicorp/tap/terraform'
+   + this upgrades Terraform
+     5, To verify the installation, by running the code: 'terraform -help'
 
 ## Create a Terraform project
 
@@ -72,8 +84,7 @@ resource "aws_instance" "app_server" {
    + Type `yes`
    + This will tear down the instance. The goal is to keep the instance up for only as long as you 
    need it. **Make sure you destroy when you are done** and verify that your output is
-
-TODO : need image^ 
+[destroy](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/destroy.png)
 
 ## Creating a CLI Key to Use to Connect to Instance
 

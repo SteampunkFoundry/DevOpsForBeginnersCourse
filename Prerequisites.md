@@ -11,7 +11,8 @@
 
 ### Useful Plugins 
 
-TODO 
+1. Download the following plugins
+[plugins](![A test image](image.png))
 
 ## Installing and Setting up Git 
 
@@ -134,5 +135,6 @@ Unpacking objects: 100% (30/30), 1.79 MiB | 2.54 MiB/s, done.
 5. On the left middle side there should be 3 tabs, hit the **Commit** Tab.
 6. Select the README, type a commit message, and hit **Commit and Push** and hit **Push** 
    when the window pops up
+   [commit](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/commitTab.png)
 7. Go to your repository in your web browser to make sure the branch was updated and then 
    hit **Compare and Request** to create a Pull Request 
