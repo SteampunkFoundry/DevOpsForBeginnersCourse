@@ -9,7 +9,7 @@ AWS instance using Terraform, then using Ansible to provision this instance, and
 finally to automating this process with Jenkins.
 
 ## Table of Contents
-+ Prerequisites
++ Prerequisites 
   
     + Installing IntelliJ 
     + Creating a GitHub Account

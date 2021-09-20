@@ -15,7 +15,7 @@
 ## Configuring AWS and VPN access
 
 ### AWS CLI 
-
+ 
 1. Reach out to Victor Konn to get access to AWS CLI. He will generate
 keys for you and provide you with an AWS_ACCESS_KEY_ID and 
 AWS_SECRET_ACCESS_KEY. Store these in a safe place and do not share them 

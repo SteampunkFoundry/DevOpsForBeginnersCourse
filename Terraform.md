@@ -35,7 +35,7 @@ https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraf
    + this updates Terraform
 4. run the command: 'brew upgrade hashicorp/tap/terraform'
    + this upgrades Terraform
-     5, To verify the installation, by running the code: 'terraform -help'
+     5, To verify the installation, by running the code: 'terraform -help' 
 
 ## Create a Terraform project
 
