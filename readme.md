@@ -1,4 +1,5 @@
 ![Logo](https://github.com/SteampunkFoundry/images/raw/master/steampunk_banner-white_pink_on_grey.jfif)
+
 # DevSecOps for Beginners Course
 
 This course is meant for those who are new to DevSecOps and would like to
@@ -9,6 +10,7 @@ AWS instance using Terraform, then using Ansible to provision this instance, and
 finally to automating this process with Jenkins.
 
 ## Table of Contents
+
 + [Prerequisites](./Prerequisites.md)
   
     + Installing IntelliJ 
