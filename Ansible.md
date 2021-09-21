@@ -14,7 +14,7 @@ Please refer to the following documents:
         + https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
         + https://www.terraform.io/docs/language/resources/provisioners/remote-exec.html
 2. SSH into your instance
-3. To verify that this was installed, run the command: 'ansible --version'
+3. To verify that this was installed, run the command: `ansible --version`
 
 ### Install Java
 
