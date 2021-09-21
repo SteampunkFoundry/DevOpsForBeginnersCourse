@@ -12,7 +12,8 @@
 ### Useful Plugins 
 
 1. Download the following plugins
-[plugins](![A test image](image.png))
+
+![A test image](./imgs/plugins.PNG)
 
 ## Installing and Setting up Git 
 
