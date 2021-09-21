@@ -1,11 +1,12 @@
 # Ansible and Java
 
-Ansible is a tool to help install and controll what is on your instance.
+Ansible is a tool to help install and control what is on your instance.
 
 ### Install Ansible
-Please refer to the following documents:
-    + https://www.redhat.com/en/blog/ansible-101-ansible-beginners
-    + https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html
+
+Please refer to the following documents: 
++ https://www.redhat.com/en/blog/ansible-101-ansible-beginners
++ https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html
 1. Install Ansible onto your machine
    + You can use a file provisioner
         + https://www.terraform.io/docs/language/resources/provisioners/file.html
@@ -16,6 +17,7 @@ Please refer to the following documents:
 3. To verify that this was installed, run the command: 'ansible --version'
 
 ### Install Java
+
 1. Using an Ansible playbook, write a script to install Java
    + note: you will not need a separate hosts file
 2. For this you will need to use a File Provisioner 
