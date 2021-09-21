@@ -10,7 +10,8 @@ critical component of Ansible, as it is often used to configure multiple hosts a
 In this lesson you will use Terraform to install Ansible on your instance, then write 
 a simple Ansible playbook that will install Java on a linux machine, and finally you will 
 use Ansible in conjunction with Terraform to run this playbook and as a result provision 
-your instance. 
+your instance. Feel free to use Ansible's [docs](https://docs.ansible.com/ansible/latest/index.html)
+for reference as needed! 
 
 For some background on Ansible, refer to the following documents:
 + https://www.redhat.com/en/blog/ansible-101-ansible-beginners
