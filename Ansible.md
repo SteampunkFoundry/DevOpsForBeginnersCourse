@@ -2,25 +2,57 @@
 
 Ansible is a tool to help install and control what is on your instance.
 
-### Install Ansible
-
-Please refer to the following documents: 
+For some background on Ansible, refer to the following documents:
 + https://www.redhat.com/en/blog/ansible-101-ansible-beginners
 + https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html
-1. Install Ansible onto your machine
-   + You can use a file provisioner
-        + https://www.terraform.io/docs/language/resources/provisioners/file.html
-    + You can also use a remote provisioner
-        + https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
-        + https://www.terraform.io/docs/language/resources/provisioners/remote-exec.html
-2. SSH into your instance
-3. To verify that this was installed, run the command: `ansible --version`
 
-### Install Java
+## Using Terraform to Install Ansible on an EC2 Instance
 
-1. Using an Ansible playbook, write a script to install Java
-   + note: you will not need a separate hosts file
-2. For this you will need to use a File Provisioner 
-For more reading: 
-   + https://www.javatpoint.com/ansible-playbooks
+1. Using the following reference docs and sample code, install Ansible on your 
+instance one of two ways:
+   + Using a `remote-exec` provisioner:
+      + https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+      + https://www.terraform.io/docs/language/resources/provisioners/remote-exec.html
+     
+      ```hcl
+      provisioner "remote-exec" { 
+         inline = [
+            "< shell script to install ansible >"
+         ]
+      }
+      ```
 
+   + Using a `file` provisioner and a `remote-exec` to run a shell script:
+     + https://www.terraform.io/docs/language/resources/provisioners/file.html
+     
+     ```hcl
+      provisioner "file" { 
+       source      = "./<your-install-script>.sh"
+       destination = "~/<your-install-script>.sh"
+      }
+       
+      provisioner "remote-exec" { 
+       inline = [
+          "~/<your-install-script>.sh"
+        ]
+      }
+     ```
+   + **NOTE**: you will need a `connection` block in your `main.tf` file
+   so that terraform has a way to connect to the instance to run the provisioners.
+   Add the following code to your file:
+   TODO: 
+      ```hcl
+
+      ```
+   
+3. SSH into your instance to confirm the installation was successful
+4. To verify that it is installed, run the command: `ansible --version`
+5. Remember to run `terraform destroy` when you are done!
+
+## Using Ansible to Install Java
+
+1. Write an Ansible playbook that will install Java on your EC2 instance
+   + note: you will not need to create a hosts file
+2. For this you will need to use a `file` provisioner in `main.tf` and a `remote-exec`,
+similar to the steps followed above, but the file should be an Ansible playbook file.
+   + For more reading: https://www.javatpoint.com/ansible-playbooks
