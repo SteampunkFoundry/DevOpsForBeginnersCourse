@@ -1,6 +1,15 @@
 # Ansible and Java
 
-Ansible is a tool to help install and control what is on your instance.
+Ansible is a software provisioning, configuration management, application deployment, 
+and orchestration tool that is used to automate installation and configuration of software
+in cloud or on-prem infrastructure, or local VMs. Ansible files are called playbooks and
+are written in YAML format. In addition to the playbook, an Ansible hosts file is often 
+used to specify which host to provision -- this will not be used in this lesson, but is a 
+critical component of Ansible, as it is often used to configure multiple hosts at once. 
+
+In this lesson we will first install Ansible on our instance, then write a simple Ansible 
+playbook that will install Java on a linux machine, and finally we will use Ansible in 
+conjunction with Terraform to run this playbook and as a result provision our instance. 
 
 For some background on Ansible, refer to the following documents:
 + https://www.redhat.com/en/blog/ansible-101-ansible-beginners
