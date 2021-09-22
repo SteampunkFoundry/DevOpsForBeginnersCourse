@@ -2,9 +2,20 @@
 
 ## Overview
 
-Terraform is a language that helps set up environments and the features run on that environment.
+Terraform is an Infrastructure as Code (IaC) tool used to define, provision, and create
+cloud infrastructure. Terraform has nearly endless capabilities, including configuring
+compute instances, storage, and networking in order to customize cloud infrastructure as 
+needed. Terraform has many "providers", each with its own capabilities and specifications.
+Terraform code is written in a declarative language, called HashiCorp Configuration Language (HCL).
 
-Begin by reviewing the following guide on using Terraform with AWS: 
+For this lesson we will be using the [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) 
+provider in order to launch an Ubuntu Amazon Elastic Cloud Compute (EC2) instance in Steampunk's 
+Virtual Private Cloud (VPC). Next, we will create an ssh key in AWS so that we can ssh to the 
+live instance in order to troubleshoot. Later on we will provision this instance using various 
+methods. You are encouraged to use Terraform's extensive [docs](https://www.terraform.io/docs/index.html) 
+throughout this course! 
+
+Begin by reviewing the following how-to guide on using Terraform with AWS: 
 https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started
 
 ## Install and configure Terraform on your machine

@@ -4,8 +4,8 @@
 
 ### AWS CLI 
 
-1.Go to: https://aws.amazon.com/cli/ and download the interface
-2.Follow the instructions on the installer, defaults are okay
+1. Go to: https://aws.amazon.com/cli/ and download the interface
+2. Follow the instructions on the installer, defaults are okay
 
 ### WireGuard
 
