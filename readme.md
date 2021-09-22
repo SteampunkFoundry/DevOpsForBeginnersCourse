@@ -1,4 +1,5 @@
 ![Logo](https://github.com/SteampunkFoundry/images/raw/master/steampunk_banner-white_pink_on_grey.jfif)
+
 # DevSecOps for Beginners Course
 
 This course is meant for those who are new to DevSecOps and would like to
@@ -9,7 +10,8 @@ AWS instance using Terraform, then using Ansible to provision this instance, and
 finally to automating this process with Jenkins.
 
 ## Table of Contents
-+ Prerequisites
+
++ [Prerequisites](./Prerequisites.md)
   
     + Installing IntelliJ 
     + Creating a GitHub Account
@@ -18,19 +20,19 @@ finally to automating this process with Jenkins.
     + Cloning A Repository
     + Creating Changes and Creating a Pull Request
 
-+ Local Setup
++ [Local Setup](./LocalSetup.md)
     + Install AWS CLI
     + Configure AWS CLI access
-    + Install Wireguard and Configure Access
+    + Install WireGuard and Configure Access
 
-+ Terraform
++ [Terraform](./Terraform.md)
     + Install and configure Terraform on your machine
     + Create a Terraform project
     + Create a ssh Key with AWS CLI
     + Connecting to Your Instance
 
-+ Ansible and Java
++ [Ansible and Java](./Ansible.md)
     + Installing Ansible
 
-+ Jenkins
++ [Jenkins](./Jenkins.md)
 
