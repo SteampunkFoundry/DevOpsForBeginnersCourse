@@ -22,7 +22,7 @@ You must be on the VPN to access Jenkins
      + IE: https://github.com/SteampunkFoundry/FakeRepository.git
    + Credentials: `steampunk-bot`
 3. Make sure the branch is your `develop` or `main` branch
-   +![Configure](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/PipelineSetup_jenkins.PNG)
+   ![Configure](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/PipelineSetup_jenkins.PNG)
 
 ## Creating the Jenkins Script
 1. Using the following template create a script to run `Terraform Innit`, `Terraform Plan`, `Terraform Apply`
@@ -55,6 +55,6 @@ node(label) {
 2. To test:
    + Make sure your Jenkins file is in your repository and pushed to your main branch
    + On Jenkins: hit `Build Now`
-     + ![Builds](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/Builds_jenkins.PNG)
+     ![Builds](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/Builds_jenkins.PNG)
    + Select the build and hit `Console Output`
-     + ![Output](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/ConsoleOutput_jenkins.PNG)
+     ![Output](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/ConsoleOutput_jenkins.PNG)
