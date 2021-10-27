@@ -10,7 +10,7 @@ You must be on the VPN to access Jenkins
 ## Creating a Job
 1. Click: `New Item`
 2. The name should be `DevOpsForBeginners<First Name>`
-   + It should be a `Multi-configuration project`
+   + It should be a `Pipeline`
    
 
 
@@ -25,8 +25,8 @@ You must be on the VPN to access Jenkins
    ![Configure](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/PipelineSetup_jenkins.PNG)
 
 ## Creating the Jenkins Script
-1. Using the following template create a script to run `Terraform Innit`, `Terraform Plan`, `Terraform Apply`
-```
+1. Using the following template create a script to run your Terraform commands, make sure its automated so there is no wait times.
+```groovy
 def label = "ImageBuildPod-${UUID.randomUUID().toString()}"
 
 podTemplate(label: label,
