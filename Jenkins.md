@@ -22,7 +22,8 @@ You must be on the VPN to access Jenkins [add link to section]
 ## Creating the Jenkins Script
 1. Using the following template create a script to run 'Terraform Innit', 'Terraform Plan', 'Terraform Apply'
    + 
-'def label = "ImageBuildPod-${UUID.randomUUID().toString()}"
+'''
+def label = "ImageBuildPod-${UUID.randomUUID().toString()}"
 
 podTemplate(label: label,
 containers: [
@@ -45,7 +46,8 @@ node(label) {
         }
 
     }
-}'
+}
+'''
 2. To test:
    + Make sure your Jenkins file is in your repository and pushed to your main branch
    + On Jenkins: hit 'build now'
