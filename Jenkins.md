@@ -1,5 +1,6 @@
 # Jenkins
-You must be on the VPN to access Jenkins [add link to section]
+You must be on the VPN to access Jenkins
+![VPN Access](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/LocalSetup.md)
 
 ## Accessing Jenkins
 1. Go to: https://jenkins.dhsice.name/login
