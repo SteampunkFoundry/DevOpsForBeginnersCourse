@@ -20,6 +20,7 @@ You must be on the VPN to access Jenkins
    + Select SCM: `Git`
    + You want to link your repository and have it end with a .git
      + IE: https://github.com/SteampunkFoundry/FakeRepository.git
+   + You need to give 'steampunk-bot' read access to your repo 
    + Credentials: `steampunk-bot`
 3. Make sure the branch is your `develop` or `main` branch
    ![Configure](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/PipelineSetup_jenkins.PNG)
@@ -31,8 +32,10 @@ def label = "ImageBuildPod-${UUID.randomUUID().toString()}"
 
 podTemplate(label: label,
 containers: [
-containerTemplate(name: 'git', image: 'alpine/git', ttyEnabled: true, command: 'cat')
-],
+ccontainer('terraform'){
+    withCredentials([]) <USE THE CODE GENERATOR TO CREATE THIS LINE OF CODE WITH KEY CREDITIALS>
+    withCredentials([usernamePassword(<USE THE CODE GENERATOR TO CREATE AWS ACCESS WITH JEFFAWS>) {
+            // some block
 nodeSelector: 'role=workers')
 {
 node(label) {
@@ -54,7 +57,7 @@ node(label) {
 ```
 2. To test:
    + Make sure your Jenkins file is in your repository and pushed to your main branch
-   + On Jenkins: hit `Build Now`
+   + When you are ready to test your code on Jenkins hit: `Build Now`
      ![Builds](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/Builds_jenkins.PNG)
    + Select the build and hit `Console Output`
      ![Output](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/ConsoleOutput_jenkins.PNG)
