@@ -15,18 +15,20 @@ You must be on the VPN to access Jenkins
 
 
 ## Connect to Github 
-1. Under configure>Advanced Project Options
+1. Under configure>Pipeline
 2. Select: `Pipeline script from SCM`
    + Select SCM: `Git`
    + You want to link your repository and have it end with a .git
      + IE: https://github.com/SteampunkFoundry/FakeRepository.git
-   + You need to give 'steampunk-bot' read access to your repo 
+   + You need to give 'steampunk-bot' read access to your repo
    + Credentials: `steampunk-bot`
-3. Make sure the branch is your `develop` or `main` branch
+3. Make sure the branch is your `develop` or `main` branch, or which ever branch the Jenkins file you are testing is
    ![Configure](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/PipelineSetup_jenkins.PNG)
 
 ## Creating the Jenkins Script
 1. Using the following template create a script to run your Terraform commands, make sure its automated so there is no wait times.
+    + For the withCredentials use the code generator on Jenkins
+      + `<Project Name> > Pipeline Syntax`
 ```groovy
 def label = "ImageBuildPod-${UUID.randomUUID().toString()}"
 
