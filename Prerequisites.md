@@ -12,6 +12,7 @@
 ### Useful Plugins 
 
 1. Download the following plugins
+   + These will help formatting and will color code the file so it's easier to troubleshoot
 
 ![A test image](./imgs/plugins.PNG)
 
@@ -39,21 +40,20 @@ shell of choice, go to step 4*
    are ok) if it's not already on your machine
     + To check if it’s already on your machine, go to the start button and type git, 
       “Git Bash” should come up in the window.
-2. Open a Git Bash window:
-3. Follow step 1.A, and click to open a window
+2. Open a Git Bash window from the Start menu on your machine:
 4. Use the command: `cd ~/.ssh`
 5. Run the command: `ls`
 6. Run the command: `ssh-keygen -o`
 
 ```javascript
-PS C:\Users\YourUser> ssh-keygen -o
+PS C:\Users\<YourUser>> ssh-keygen -o
 Generating public/private rsa key pair.
-Enter file in which to save the key (C:\Users\YourUser/.ssh/steampunk_rsa):
-Created directory 'C:\Users\YourUser/.ssh'.
+Enter file in which to save the key (C:\Users\<YourUser>/.ssh/steampunk_rsa):
+Created directory 'C:\Users\<YourUser>/.ssh'.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
-Your identification has been saved in C:\Users\YourUser/.ssh/steampunk_rsa.
-Your public key has been saved in C:\Users\YourUser/.ssh/steampunk_rsa.pub.
+Your identification has been saved in C:\Users\<YourUser>/.ssh/steampunk_rsa.
+Your public key has been saved in C:\Users\<YourUser>/.ssh/steampunk_rsa.pub.
 The key fingerprint is:
 SHA256:8dvoBlfJDSSVqwAfVFQwzx7LOJWApbCWBMH9y/xwlPc azuread\youruser@USER-LT
 The key's randomart image is:
@@ -72,26 +72,27 @@ The key's randomart image is:
 
 7. Run the command: `ls`
 8. Run the command:  `cat ~/.ssh/steampunk_rsa.pub`
+   + `Cat` will show the contents of the file, in this case our public key
    + Copy the entire output
 9. If more help is needed: https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
-10. Open GitHub, login, and go to your settings
+10. Open GitHub in a web browser, login, and go to your settings
 11. On the left side there is a tab titled: `SSH and GPG keys`
 12. Click: `New SSH Key`
-13. Copy the output from Step 7 and create a name for this key
+13. Copy the output from step 8 where we ran `cat <file>` and create a name for this key
 14. Upon completion, you will need to enter your password to confirm
     
 ### Use Git Bash in IntelliJ
  
-*Recommended for Windows users to wish to use Git Bash as their terminal in IntelliJ* 
+*Recommended for Windows users who wish to use Git Bash as their terminal in IntelliJ* 
 
-15. Open IntelliJ, go to File > Settings 
-16. Search for "Terminal"
-17. Change "Shell Path" to where you installed Git Bash in step 1, for example 
-    `C:\Program Files\Git\bin\bash.exe`
+1. Open IntelliJ, go to File > Settings 
+2. Search for "Terminal"
+3. Change "Shell Path" to where you installed Git Bash in step 1, for example 
+   `C:\Program Files\Git\bin\bash.exe`
     
 ## Creating a Repository
 
-1. Go to https://github.com/SteampunkFoundry and hit the "+" button in the top right, 
+1. Using a web browser go to https://github.com/SteampunkFoundry and hit the "+" button in the top right, 
    select “New repository”
 2. Call your repository: **DevOpsforBeginners-<YOUR-NAME>** or something similar -- all 
    the work you do for this course will go in this repository 
@@ -103,6 +104,8 @@ The key's randomart image is:
 
 1. Go to the repository you just created 
 2. On the Code drop down menu, select SSH and copy the text
+   + This is going to allow us to access the repository from IntelliJ
+   + For more information: https://github.com/SteampunkFoundry/GitOpsTutorial
 3. In your IDE, open the terminal on the bottom.
    + Run: `cd Users\[your id]`
    + Run the command: `git clone [copied text]`
@@ -121,7 +124,7 @@ Unpacking objects: 100% (30/30), 1.79 MiB | 2.54 MiB/s, done.
 4. To Verify, Go to the directory in File Explorer and `DevOpsforBeginners-<YOUR-NAME>` should 
    be a new folder
 
-## Creating Changes and Creating a Pull Request:
+## Creating Changes and Creating a Pull Request
 
 1. Open the README file
 2. Within this file change the name to reflect the name of your Repository
