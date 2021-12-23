@@ -68,7 +68,7 @@ node(label) {
 For more information: https://tomcat.apache.org/tomcat-9.0-doc/index.html
 1. Using your Ansible Playbook, download `tomcat9-admin`
 
-### Subsection provisioning with ansible
+### Provisioning with Ansible
 Ansible Playbooks allow you to configure your instance with the applications needed just by building the pipeline. Using the Ansible Playbook, users can run shell scripts, install applications and set up their environment as needed.
 1. Using the following code as a template fill in the following for your ansible playbook.
    + Below are links to documentation
