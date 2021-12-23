@@ -64,11 +64,38 @@ node(label) {
    + Select the build and hit `Console Output`
      ![Output](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/ConsoleOutput_jenkins.PNG)
 
-##Installing TomCat onto the Instance
+## Installing TomCat onto the Instance
 For more information: https://tomcat.apache.org/tomcat-9.0-doc/index.html
 1. Using your Ansible Playbook, download `tomcat9-admin`
 
-##Implement A Destroy
+### subsection provisioning with ansible
+    explain what the ansible playbook does/how it fits in
+    + Using the following code
+        ``` groovy
+        - hosts: localhost
+        
+        tasks:
+        
+        - name: Install OpenJDK Java
+        
+        - name: download tomcat server packages
+        
+        - name: extract tomcat packages
+        
+        - name: Add group “tomcat”
+        
+        - name: Add user “tomcat”
+        
+        - name: Recursively change ownership of a directory
+        
+        - name: Create a directory if it does not exist
+        
+        - name: start tomcat services``` 
+  
+    "Name: *descritor*" they fill in the bottom
+    Point to the documentation
+
+## Implement A Destroy
 We are going to include an auto approved destroy in your jenkinsfile
 1. Go to your jenkisfile
 2. After the line: `sh 'terraform apply --auto-approve'`
