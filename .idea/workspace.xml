@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bcf10923-28af-4820-ba8b-6b511c9d62d3" name="Changes" comment="Update on Jenkins">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkins.md" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkins.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="rachel-updates" />
+                    <option name="lastUsedInstant" value="1638202393" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1635969883" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectId" id="1z3IZNZnw3moPlS6JdEVdUUTNhy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TF_FMT" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DevOpsforBeginners-Rachel" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DevOpsForBeginnersCourse" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="DevOpsForBeginnersCourse" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcf10923-28af-4820-ba8b-6b511c9d62d3" name="Changes" comment="" />
+      <created>1633370400403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633370400403</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Jenkins file">
+      <created>1635359366149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635359366150</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Jenkins file updated">
+      <created>1635359945631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1635359945631</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Jenkins file updated">
+      <created>1635360225807</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635360225807</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Jenkins file updated">
+      <created>1635360304525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1635360304525</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Jenkins file updated">
+      <created>1635360813536</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1635360813536</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Images Updates">
+      <created>1635361581065</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635361581065</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Images Updates -- Links">
+      <created>1635361880170</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635361880170</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Images Updates -- Links">
+      <created>1635361958725</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1635361958725</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Images Updates -- Links">
+      <created>1635362279147</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1635362279147</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Images Updates -- Links">
+      <created>1635362330812</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1635362330812</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Images Updates -- Links">
+      <created>1635365118414</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1635365118415</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Jenkins Update">
+      <created>1635969830745</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1635969830745</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Jenkins Update">
+      <created>1636576413569</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1636576413569</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update after reccommendations from Joe">
+      <created>1638203317463</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638203317463</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update on Jenkins">
+      <created>1639601367987</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1639601367987</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update on Jenkins">
+      <created>1640290155039</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1640290155039</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Update on Jenkins">
+      <created>1640290926433</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1640290926433</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Jenkins file" />
+    <MESSAGE value="Jenkins file updated" />
+    <MESSAGE value="Images Updates" />
+    <MESSAGE value="Images Updates -- Links" />
+    <MESSAGE value="Jenkins Update" />
+    <MESSAGE value="Update after reccommendations from Joe" />
+    <MESSAGE value="Update on Jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update on Jenkins" />
+  </component>
+</project>
