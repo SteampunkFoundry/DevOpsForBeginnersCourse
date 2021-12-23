@@ -71,8 +71,8 @@ For more information: https://tomcat.apache.org/tomcat-9.0-doc/index.html
 ### Subsection provisioning with ansible
 Ansible Playbooks allow you to configure your instance with the applications needed just by building the pipeline. Using the Ansible Playbook, users can run shell scripts, install applications and set up their environment as needed.
 1. Using the following code as a template fill in the following for your ansible playbook.
-+ Below are links to documentation
-+ Beware that spacing and indexing is critical for this portion
+   + Below are links to documentation
+   + Beware that spacing and indexing is critical for this portion
 ```groovy
 - hosts: localhost
 
@@ -88,10 +88,10 @@ tasks:
 - name: start tomcat services
 ```
 2. Links
-+ Ansible Playbook Documentation: https://docs.ansible.com/ansible/latest/user_guide/playbooks.html
-+ Modules Documentation: https://docs.ansible.com/ansible/latest/user_guide/modules.html
-    + Apt Module Documentation: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
-+ List of Modules: https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html
+   + Ansible Playbook Documentation: https://docs.ansible.com/ansible/latest/user_guide/playbooks.html
+   + Modules Documentation: https://docs.ansible.com/ansible/latest/user_guide/modules.html
+       + Apt Module Documentation: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
+   + List of Modules: https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html
 
 
 ## Implement A Destroy
