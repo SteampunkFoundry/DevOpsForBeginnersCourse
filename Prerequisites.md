@@ -167,3 +167,6 @@ Unpacking objects: 100% (30/30), 1.79 MiB | 2.54 MiB/s, done.
    [commit](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/commitTab.png )
 7. Go to your repository in your web browser to make sure the branch was updated and then 
    hit **Compare and Request** to create a Pull Request 
+
+   
+Next Lesson: [LocalSetup](./LocalSetup.md)
