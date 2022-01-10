@@ -6,6 +6,7 @@ You must be on the VPN to access Jenkins
 
 ## Accessing Jenkins
 
+
 1. Go to: https://jenkins.dhsice.name/login
    + If you do not already, reach out to Prerna Hodge for the credentials
 
@@ -27,6 +28,7 @@ You must be on the VPN to access Jenkins
         - Go to your repository in GitHub
         - Navigate to **Settings** > **Manage Access**
         - Select **Add People** and add **steampunk-bot**
+
 3. Make sure the branch is your `develop` or `main` branch, or which ever branch the Jenkins file you are testing is
    ![Configure](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/PipelineSetup_jenkins.PNG)
 
@@ -36,6 +38,7 @@ You must be on the VPN to access Jenkins
    + For the `withCredentials` block use the Pipeline Syntax code generator in Jenkins by navigating to your project
      then selecting **Pipeline Syntax** 
     
+
 ```groovy
 def label = "ImageBuildPod-${UUID.randomUUID().toString()}"
 
@@ -69,6 +72,7 @@ node(label) {
    + When you are ready to test your code on Jenkins hit: `Build Now`
      ![Builds](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/Builds_jenkins.PNG)
    + Select the build and hit `Console Output`
+
      ![Output](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/ConsoleOutput_jenkins.PNG)
 
 ## Installing Tomcat onto the Instance
@@ -126,3 +130,4 @@ We are going to include an auto approved destroy in your jenkinsfile
    2. Try to keep it minimal so your instance isn't running longer than you need it
 4. Add in: `sh 'terraform destroy --auto-approve'`
 5. Add in: `sh 'rm ./<keyname>.pem'`
+
