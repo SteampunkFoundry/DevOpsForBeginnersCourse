@@ -67,3 +67,6 @@ instance one of two ways:
 2. For this you will need to use a `file` provisioner in `main.tf` and a `remote-exec`,
 similar to the steps followed above, but the file should be an Ansible playbook file.
    + For more reading: https://www.javatpoint.com/ansible-playbooks
+
+Previous Lesson: [Terraform](./Terraform.md) | Next Lesson: [Jenkins](./Jenkins.md)
+

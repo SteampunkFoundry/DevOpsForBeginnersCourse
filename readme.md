@@ -12,13 +12,14 @@ finally to automating this process with Jenkins.
 ## Table of Contents
 
 + [Prerequisites](./Prerequisites.md)
-  
-    + Installing IntelliJ 
-    + Creating a GitHub Account
-    + Connecting Git to IntelliJ
+    + Installing and Setting up Git 
+    + Useful Plugins
+    + Installing Git Bash (Windows) and Generating an SSH key
+    + Use Git Bash in IntelliJ
     + Creating a Repository
-    + Cloning A Repository
+    + Cloning a Repository
     + Creating Changes and Creating a Pull Request
+
 
 + [Local Setup](./LocalSetup.md)
     + Install AWS CLI
