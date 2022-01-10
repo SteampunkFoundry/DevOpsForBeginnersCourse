@@ -24,6 +24,7 @@ branches and each branch contains changes to the project that can be merged, cal
 pull request, into the parent branch by the owner(s) of the repository. Anyone who has
 the project can easily pull changes made by other collaborators by using the `git pull` 
 command.*
+
 1. Open and follow the instructions on the site and use your STEAMPUNK email to sign 
    up: https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home
 2. For more information: https://guides.github.com/activities/hello-world/
@@ -31,19 +32,34 @@ command.*
 4. When access is given you should receive an email to login and gain access
 5. For an explanation about GitOps and best practices: https://github.com/SteampunkFoundry/GitOpsTutorial/
 
-## Installing Git Bash (Windows) and Generating an SSH key 
+## Installing Git Bash and Generating an SSH key 
 
-*Note: Git Bash (step 1 - 3) is only required for Windows. For Mac or Linux use default shell or 
-shell of choice, go to step 4*
+*Note: Git Bash is only required for Windows. For Mac or Linux use default shell or 
+shell of choice*
 
-1. Download GIT bash from https://git-scm.com/downloads  (follow the installer, defaults 
-   are ok) if it's not already on your machine
-    + To check if it’s already on your machine, go to the start button and type git, 
-      “Git Bash” should come up in the window.
-2. Open a Git Bash window from the Start menu on your machine:
-4. Use the command: `cd ~/.ssh`
-5. Run the command: `ls`
-6. Run the command: `ssh-keygen -o`
+### Installing Git Bash (Windows)
+
+Git Bash is an application for Windows environments which provides a Unix style 
+terminal to make the Git command line experience more convenient. Git Bash 
+is a package that installs Bash, some common bash utilities, and Git on a Windows 
+operating system. 
+
+1. Download Git bash from https://git-scm.com/downloads  
+2. Follow the installer (defaults are ok) 
+      
+### Generating a SSH key 
+
+We need to generate a SSH keypair that will be used to connect to GitHub so that we can
+push and pull our code to the remote repository without using username/password or a personal access
+token to authenticate every time. Visit [this page](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
+more background information on the SSH protocol.
+
+1. Open a terminal (Git Bash if on Windows) on your machine:
+2. Use the command: `cd ~/.ssh` 
+   this is the directory where you should store ssh keys
+3. Run the command: `ssh-keygen -o`
+
+The output should look something like this:
 
 ```javascript
 PS C:\Users\<YourUser>> ssh-keygen -o
@@ -70,27 +86,32 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-7. Run the command: `ls`
-8. Run the command:  `cat ~/.ssh/steampunk_rsa.pub`
-   + `Cat` will show the contents of the file, in this case our public key
+4. Run the command: `ls` to see what files have been generated  
+You should have two files now, `steampunk_rsa` the private key, and `steampunk_rsa.pub` the public key. 
+Private keys remain on your machine and **should never be shared**. In the next steps you will
+add your **public key** to your GitHub account so that you can use the SSH  protocol to 
+authenticate to your GitHub account.  
+5. To view the public key run the command:  `cat ~/.ssh/steampunk_rsa.pub`
+   + `cat` will show the contents of a file, in this case our public key
    + Copy the entire output
-9. If more help is needed: https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
-10. Open GitHub in a web browser, login, and go to your settings
-11. On the left side there is a tab titled: `SSH and GPG keys`
-12. Click: `New SSH Key`
-13. Copy the output from step 8 where we ran `cat <file>` and create a name for this key
-14. Upon completion, you will need to enter your password to confirm
+6. If more help is needed: https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
+7. Open GitHub in a web browser, login, and go to **settings**
+8. On the left side there is a tab titled: **SSH and GPG keys**
+9. Select: **New SSH Key**
+10. Copy the output from step 8 where we ran `cat <file>` and create a name for this key
+11. Upon completion, you will need to enter your password to confirm
     
-### Use Git Bash in IntelliJ
+### Use Git Bash as terminal in IntelliJ (Optional, Windows Only)
  
-*Recommended for Windows users who wish to use Git Bash as their terminal in IntelliJ* 
+*Recommended for Windows users who wish to use Git Bash, a Unix style command-line 
+environment as their terminal in every IntelliJ window* 
 
 1. Open IntelliJ, go to File > Settings 
 2. Search for "Terminal"
 3. Change "Shell Path" to where you installed Git Bash in step 1, for example 
    `C:\Program Files\Git\bin\bash.exe`
     
-## Creating a Repository
+## Creating a Git Repository
 
 1. Using a web browser go to https://github.com/SteampunkFoundry and hit the "+" button in the top right, 
    select “New repository”
@@ -104,6 +125,10 @@ The key's randomart image is:
 
 1. Go to the repository you just created 
 2. On the Code drop down menu, select SSH and copy the text
+   + With the SSH option, GitHub will use your public/privat keypair to establish
+     a connection and authenticate you to the remote repository. This method 
+     is preferred, as with HTTPS you will be required to provide your username 
+     and password everytime you push
    + This is going to allow us to access the repository from IntelliJ
    + For more information: https://github.com/SteampunkFoundry/GitOpsTutorial
 3. In your IDE, open the terminal on the bottom.
@@ -121,12 +146,12 @@ remote: Total 30 (delta 7), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (30/30), 1.79 MiB | 2.54 MiB/s, done.
 ```
 
-4. To Verify, Go to the directory in File Explorer and `DevOpsforBeginners-<YOUR-NAME>` should 
+5. To Verify, Go to the directory in File Explorer and `DevOpsforBeginners-<YOUR-NAME>` should 
    be a new folder
 
 ## Creating Changes and Creating a Pull Request
 
-1. Open the README file
+1. Open the README.md file
 2. Within this file change the name to reflect the name of your Repository
 3. Write a description for this repository 
 4. Open the terminal in IntelliJ
@@ -142,3 +167,6 @@ Unpacking objects: 100% (30/30), 1.79 MiB | 2.54 MiB/s, done.
    [commit](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/commitTab.png )
 7. Go to your repository in your web browser to make sure the branch was updated and then 
    hit **Compare and Request** to create a Pull Request 
+
+   
+Next Lesson: [LocalSetup](./LocalSetup.md)
