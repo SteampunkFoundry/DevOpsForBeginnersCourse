@@ -29,6 +29,14 @@ You must be on the VPN to access Jenkins
 1. Using the following template create a script to run your Terraform commands, make sure its automated so there is no wait times.
     + For the withCredentials use the code generator on Jenkins
         + `<Project Name> > Pipeline Syntax`
+### withCredentials
+
++ withCredentials allows critical login information (such as keys or passwords) to be fed into the build to be used by Jenkins and Terraform to gain access without user interferance.
++ In order to use credentials on your build, you have to enter the credentials into the Jenkins globabl credentials which can be found under `Manage Jenkins` > `Manage Credentials`
+   + For More information: https://www.jenkins.io/doc/book/using/using-credentials/
++ This allows for the build to login and to verify users, allowing for the pipeline to be created securely and automatically.
+
++ withCredentials Documentation: https://www.jenkins.io/doc/pipeline/steps/credentials-binding/
 ```groovy
 def label = "ImageBuildPod-${UUID.randomUUID().toString()}"
 
@@ -71,6 +79,7 @@ podTemplate(label: label,
 
         }
 ```
+
 2. To test:
     + Make sure your Jenkins file is in your repository and pushed to your main branch
     + When you are ready to test your code on Jenkins hit: `Build Now`
