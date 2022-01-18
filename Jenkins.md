@@ -29,14 +29,6 @@ You must be on the VPN to access Jenkins
 1. Using the following template create a script to run your Terraform commands, make sure its automated so there is no wait times.
     + For the withCredentials use the code generator on Jenkins
         + `<Project Name> > Pipeline Syntax`
-### withCredentials
-
-+ withCredentials allows critical login information (such as keys or passwords) to be fed into the build to be used by Jenkins and Terraform to gain access without user interferance.
-+ In order to use credentials on your build, you have to enter the credentials into the Jenkins globabl credentials which can be found under `Manage Jenkins` > `Manage Credentials`
-   + For More information: https://www.jenkins.io/doc/book/using/using-credentials/
-+ This allows for the build to login and to verify users, allowing for the pipeline to be created securely and automatically.
-
-+ withCredentials Documentation: https://www.jenkins.io/doc/pipeline/steps/credentials-binding/
 ```groovy
 def label = "ImageBuildPod-${UUID.randomUUID().toString()}"
 
@@ -56,29 +48,38 @@ podTemplate(label: label,
                 stage('Terraform Run') {
 
 
-                    container('terraform'){
-                        withCredentials([sshUserPrivateKey(credentialsId: <key name>, keyFileVariable: 'key', passphraseVariable: '', usernameVariable: <variable name>)]) {
-                            // some block
-                            withCredentials([usernamePassword(credentialsId: <key name>, passwordVariable: <password variable name>, usernameVariable: <ID name>)]) {
-                                // some block
-
-
-                                sh "cp '${key}' <key path>"
-                                sh 'chmod 600 <key path>'
-                                sh 'terraform init'
-                                sh 'terraform plan'
-                                sh 'terraform apply --auto-approve'
-                                sh 'rm <key path>'
-                            }
-                        }
-
-                    }
+                   containers: [
+                           containerTemplate(name: 'terraform', image: 'hashicorp/terraform', ttyEnabled: true, command: 'cat')
+                   ],
+                   nodeSelector: 'role=workers')
+                   {
+                      node(label) {
+                         stage('Terraform Run') {
+                            ansiColor('xterm') {
+                               container('terraform') {
+                                  withCredentials([sshUserPrivateKey(credentialsId: <key name>, keyFileVariable: 'key', passphraseVariable: '', usernameVariable: <variable name>)]) {
+                                     withCredentials([usernamePassword(credentialsId: <key name>, passwordVariable: <password variable name>, usernameVariable: <ID name>)]) {
+                                        //  create ssh key in workspace 
+                                        //  add correct permissions on key
+                                        //  terraform code 
+                                        //  delete key 
+                                     }
+                                  }
+                               }
                 }
 
             }
 
         }
 ```
+### withCredentials
+
++ withCredentials allows critical login information (such as keys or passwords) to be fed into the build to be used by Jenkins and Terraform to gain access without user interferance.
++ In order to use credentials on your build, you have to enter the credentials into the Jenkins globabl credentials which can be found under `Manage Jenkins` > `Manage Credentials`
+   + For More information: https://www.jenkins.io/doc/book/using/using-credentials/
++ This allows for the build to login and to verify users, allowing for the pipeline to be created securely and automatically.
+
++ withCredentials Documentation: https://www.jenkins.io/doc/pipeline/steps/credentials-binding/
 
 2. To test:
     + Make sure your Jenkins file is in your repository and pushed to your main branch
@@ -86,3 +87,4 @@ podTemplate(label: label,
       ![Builds](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/Builds_jenkins.PNG)
     + Select the build and hit `Console Output`
       ![Output](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/ConsoleOutput_jenkins.PNG)
+
