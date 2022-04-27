@@ -1,4 +1,5 @@
 # Final Lesson Overview
+IF YOU ARE NOT USING JENKINS, THIS CAN ONLY BE DONE BY LINUX AND MAC USERS
 >This playbook is going to expand using your knowledge of Terraform and  Ansible.
 We are going to upload a Dockerfile and run the Tomcat image that builds jpetstore.
 > The Dockerfile will be provided for you, but the Ansible playbook will be written by you.
