@@ -45,11 +45,17 @@ The goal of this playbook is to install Docker, the Dockerfile is supposed to cr
 tasks:
 
 - name: install dependency
+
 - name: add GPG key
+
 - name: add docker repository to apt
+
 - name: install docker
+
 - name: start docker
+
 - name: restart docker
+
 - name: change permissions to docker.sock
 
 ```
