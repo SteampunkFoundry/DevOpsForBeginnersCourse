@@ -4,7 +4,7 @@ IF YOU ARE NOT USING JENKINS, THIS CAN ONLY BE DONE BY LINUX AND MAC USERS
 We are going to upload a Dockerfile and run the Tomcat image that builds jpetstore.
 > The Dockerfile will be provided for you, but the Ansible playbook will be written by you.
 
-##Tips:
+## Tips:
 1. Feel free to long into the instance and test your methods, remember that Ansible is just a fancy way of doing command line
 2. If you are trying to use a Docker SDK, you are going about it the wrong way. Remember that we are installing a Docker Engine on an **instance**
 3. Just because the build works, it doesn't mean it did what you want. To test that this works: check ```<instance ip>:8080``` in your browser
