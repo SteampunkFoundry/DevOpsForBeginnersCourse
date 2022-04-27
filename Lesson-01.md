@@ -169,4 +169,4 @@ Unpacking objects: 100% (30/30), 1.79 MiB | 2.54 MiB/s, done.
    hit **Compare and Request** to create a Pull Request 
 
    
-Next Lesson: [LocalSetup](./LocalSetup.md)
+Next Lesson: [LocalSetup](./Lesson-02.md)

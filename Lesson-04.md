@@ -76,26 +76,8 @@ similar to the steps followed above, but the file should be an Ansible playbook 
      - name: Install OpenJDK Java
         apt:
    ```
-## Docker 
-1. For this project we need to install and run the following Docker file
-```yaml
-FROM tomcat:9
-
-WORKDIR /tmp/jpet/
-RUN apt-get update
-RUN git clone https://github.com/mybatis/jpetstore-6.git
 
 
-WORKDIR /tmp/jpet/jpetstore-6/
-RUN ./mvnw clean package
-RUN mv /tmp/jpet/jpetstore-6/target/jpetstore.war /usr/local/tomcat/webapps/ROOT.war
 
-```
-2. Using a file provisioner, add this file to the instance
-3. Resources for Docker: 
-    + [Docker Documentation](https://docs.docker.com/)
-    + [Steampunk's Docker Guide])(https://github.com/SteampunkFoundry/intro-to-docker)
-
-
-Previous Lesson: [Terraform](./Terraform.md) | Next Lesson: [Jenkins](./Jenkins.md)
+Previous Lesson: [Terraform](./Lesson-03.md) | Next Lesson: [Jenkins](./Lesson-05.md)
 

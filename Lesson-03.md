@@ -123,4 +123,4 @@ ssh to our instance.
    + `ssh -i ~/.ssh/aws-key.pem ubuntu@<IP-ADDRESS>`
 4. Be sure to run `terraform destroy` when you have successfully logged into the instance.
 
-Previous Lesson: [LocalSetup](./LocalSetup.md) | Next Lesson: [Ansible](./Ansible.md)
+Previous Lesson: [LocalSetup](./Lesson-02.md) | Next Lesson: [Ansible](./Lesson-04.md)

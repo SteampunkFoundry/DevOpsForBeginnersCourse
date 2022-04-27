@@ -11,29 +11,41 @@ finally to automating this process with Jenkins.
 
 ## Table of Contents
 
-+ [Prerequisites](./Prerequisites.md)
-    + Installing and Setting up Git 
++ [Lesson-01 Prerequisites](./Lesson-01.md)
+    + Installing and Setting up IntelliJ
     + Useful Plugins
     + Installing Git Bash (Windows) and Generating an SSH key
     + Use Git Bash in IntelliJ
-    + Creating a Repository
-    + Cloning a Repository
+    + Creating a Git Repository
+    + Cloning a Git Repository
     + Creating Changes and Creating a Pull Request
 
 
-+ [Local Setup](./LocalSetup.md)
-    + Install AWS CLI
++ [Lesson-02 Local Setup](./Lesson-02.md)
+    + Install AWS CLI & WireGuard
     + Configure AWS CLI access
-    + Install WireGuard and Configure Access
+    + WireGaurd SetUp
 
-+ [Terraform](./Terraform.md)
++ [Lesson-03 Terraform](./Lesson-03.md)
     + Install and configure Terraform on your machine
     + Create a Terraform project
-    + Create a ssh Key with AWS CLI
+    + Creating a CLI Key to Use to Connect to Instance
     + Connecting to Your Instance
 
-+ [Ansible and Java](./Ansible.md)
-    + Installing Ansible
++ [Lesson-04 Ansible](./Lesson-04.md)
+    + Using Terraform to Install Ansible on an EC2 Instance
+    + Using Ansible to Install Java
+    
 
-+ [Jenkins](./Jenkins.md)
++ [Lesson-05 Jenkins](./Lesson-05.md)
+  + Accessing Jenkins
+  + Creating a Job
+  + Connect to Github
+  + Getting an IP Output
+  + Creating the Jenkins Script
+  + Implementing an Auto Destroy
 
+  
++ [Lesson-06 Running Dockerfiles](./Lesson-06.md)
+  + Creating a Dockerfile
+  + Provision with Ansible
