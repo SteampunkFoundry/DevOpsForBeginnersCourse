@@ -74,15 +74,37 @@ node(label) {
    + Select the build and hit `Console Output`
 
      ![Output](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/ConsoleOutput_jenkins.PNG)
+   
+## Implement An Auto Destroy
 
-## Installing Tomcat onto the Instance
+We are going to include an auto approved destroy in your jenkinsfile
+1. Go to your jenkisfile
+2. In the ```node(label)``` section replace the entire code with:
+```groovy
+     try {
+        sh 'cp $key $WORKSPACE/ssh-key.pem'
+        sh 'chmod 600 ./ssh-key.pem'
+        sh 'export TF_LOG=TRUE'
+        sh <enter the 1st terraform command to start a build>
+        sh <enter the 2nd terraform command to start a build>
+        sh <enter the 3rd terraform command to start a build>
+    } catch (e) {
+        echo "terraform failed... destroying instance"
+        throw(e)
+    } finally {
+        sh 'sleep <enter an amount of time in specify 'm' for minutes otherwise defaults to seconds'>'
+        sh 'terraform destroy --auto-approve'
+        sh 'rm -f ./ssh-key.pem'
+    }
+```
+The above code will make sure that even if your build fails that it will still destroy the entire build
 
-For more information: https://tomcat.apache.org/tomcat-9.0-doc/index.html
-1. Using your Ansible Playbook, download `tomcat9-admin`
 
 ### Provisioning with Ansible
 
 Ansible Playbooks allow you to configure your instance with the applications needed just by building the pipeline. Using the Ansible Playbook, users can run shell scripts, install applications and set up their environment as needed.
+
+The goal of this playbook is to install Docker, the Dockerfile is supposed to create an image that will build jpetstore using Tomcat-9. To test that this works: check 127.0.0.1:8080
 1. Using the following code as a template fill in the following for your ansible playbook.
    + Below are links to documentation
    + Beware that spacing and indexing is critical for this portion
@@ -92,42 +114,26 @@ Ansible Playbooks allow you to configure your instance with the applications nee
 
 tasks:
 
-- name: Install OpenJDK Java
-
-- name: download tomcat server packages
-
-- name: extract tomcat packages
-
-- name: Add group “tomcat”
-
-- name: Add user “tomcat”
-
-- name: Recursively change ownership of tomcat directory
-
-- name: Create directory for tomcat logs
-
-- name: start tomcat service
-  
-- name: Get jpetstore WAR file from Nexus 
-  
-- name: Restart tomcat
+- name: install dependency
+- name: add GPG key
+- name: add docker repository to apt
+- name: install docker
+- name: start docker
+- name: restart docker
+- name: change permissions to docker.sock
 
 ```
-2. Links
+2. After attempting to do this yourself: try [this](https://medium.com/@pierangelo1982/install-docker-with-ansible-d078ad7b0a54)
+3. Add the following code to your "remote-exec"
+    ```terraform
+     "docker build -qt <image name> <location of Dockerfile>",
+     "docker run -dp 8080:8080 <image name"
+     ```
+4. 
+5. Links
    + Ansible Playbook Documentation: https://docs.ansible.com/ansible/latest/user_guide/playbooks.html
    + Modules Documentation: https://docs.ansible.com/ansible/latest/user_guide/modules.html
        + Apt Module Documentation: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
    + List of Modules: https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html
 
-
-## Implement A Destroy
-
-We are going to include an auto approved destroy in your jenkinsfile
-1. Go to your jenkisfile
-2. After the line: `sh 'terraform apply --auto-approve'`
-3. Add in: `sh 'sleep 9m' //change as needed`
-   1. You will have to change the time as needed, if you are just testing to make sure your code runs, use 1m or 2m
-   2. Try to keep it minimal so your instance isn't running longer than you need it
-4. Add in: `sh 'terraform destroy --auto-approve'`
-5. Add in: `sh 'rm ./<keyname>.pem'`
 

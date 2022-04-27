@@ -7,7 +7,7 @@
 1. Go to: https://aws.amazon.com/cli/ and download the interface
 2. Follow the instructions on the installer, defaults are okay
 
-### WireGuard
+### WireGuard Install
 
 1. Download and install WireGuard: https://www.wireguard.com/install/
    + WireGuard is the VPN service that we use at Steampunk
@@ -31,7 +31,7 @@ with anyone, as they give the user access to our private cloud in AWS.
    + ![error 1](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/rachel-updates/imgs/awsKeyError1.jpg)
    + ![error 2](https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/master/imgs/awsKeyError2.png)
 
-### WireGuard 
+### WireGuard Set Up
 
 1. Reach out to Victor Konn to get access to WireGuard 
 2. To verify that the VPN works, go to

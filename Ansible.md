@@ -1,4 +1,4 @@
-# Ansible and Java
+# Ansible
 
 Ansible is a software provisioning, configuration management, application deployment, 
 and orchestration tool that is used to automate installation and configuration of software
@@ -51,10 +51,14 @@ instance one of two ways:
    + **NOTE**: you will need a `connection` block in your `main.tf` file
    so that terraform has a way to connect to the instance to run the provisioners.
    Add the following code to your file:
-   TODO: 
       ```hcl
-
-      ```
+     connection {
+        host = self.private_ip
+        type = "ssh"
+        user = "ubuntu"
+        private_key = file("${path.module}/ssh-key.pem"
+     }
+     ```
    
 3. SSH into your instance to confirm the installation was successful
 4. To verify that it is installed, run the command: `ansible --version`
@@ -67,6 +71,31 @@ instance one of two ways:
 2. For this you will need to use a `file` provisioner in `main.tf` and a `remote-exec`,
 similar to the steps followed above, but the file should be an Ansible playbook file.
    + For more reading: https://www.javatpoint.com/ansible-playbooks
+   + This should help get you started !
+   ```yaml
+     - name: Install OpenJDK Java
+        apt:
+   ```
+## Docker 
+1. For this project we need to install and run the following Docker file
+```yaml
+FROM tomcat:9
+
+WORKDIR /tmp/jpet/
+RUN apt-get update
+RUN git clone https://github.com/mybatis/jpetstore-6.git
+
+
+WORKDIR /tmp/jpet/jpetstore-6/
+RUN ./mvnw clean package
+RUN mv /tmp/jpet/jpetstore-6/target/jpetstore.war /usr/local/tomcat/webapps/ROOT.war
+
+```
+2. Using a file provisioner, add this file to the instance
+3. Resources for Docker: 
+    + [Docker Documentation](https://docs.docker.com/)
+    + [Steampunk's Docker Guide])(https://github.com/SteampunkFoundry/intro-to-docker)
+
 
 Previous Lesson: [Terraform](./Terraform.md) | Next Lesson: [Jenkins](./Jenkins.md)
 

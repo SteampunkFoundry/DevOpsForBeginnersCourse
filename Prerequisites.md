@@ -55,7 +55,7 @@ token to authenticate every time. Visit [this page](https://docs.github.com/en/a
 more background information on the SSH protocol.
 
 1. Open a terminal (Git Bash if on Windows) on your machine:
-2. Use the command: `cd ~/.ssh` 
+2. Use the command: `cd ~/.ssh` (create this folder if you don't have it already)
    this is the directory where you should store ssh keys
 3. Run the command: `ssh-keygen -o`
 
