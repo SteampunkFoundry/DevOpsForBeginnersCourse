@@ -79,5 +79,5 @@ similar to the steps followed above, but the file should be an Ansible playbook 
 
 
 
-Previous Lesson: [Terraform](./Lesson-03.md) | Next Lesson: [Jenkins](./Lesson-05.md)
+Previous Lesson: [Lesson-03 Terraform](./Lesson-03.md) | Next Lesson: [Lesson-05 Jenkins](./Lesson-05.md)
 

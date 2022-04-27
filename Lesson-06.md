@@ -7,7 +7,7 @@ We are going to upload a Dockerfile and run the Tomcat image that builds jpetsto
 1. Feel free to long into the instance and test your methods, remember that Ansible is just a fancy way of doing command line
 2. If you are trying to use a Docker SDK, you are going about it the wrong way. Remember that we are installing a Docker Engine on an **instance**
 3. Just because the build works, it doesn't mean it did what you want. To test that this works: check ```<instance ip>:8080``` in your browser
-[JpetImage](!)
+[JpetImage](!https://github.com/SteampunkFoundry/DevOpsForBeginnersCourse/blob/main/imgs/jpetIMG.PNG)
  ---
 ## Creating a Dockerfile
 1. For this project we need to install and run the following Docker file
@@ -66,3 +66,4 @@ tasks:
     + List of Modules: https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html
 
 
+Previous Lesson: [Lesson-05 Jenkins](./Lesson-05.md)

@@ -38,4 +38,4 @@ with anyone, as they give the user access to our private cloud in AWS.
    + https://jenkins.dhsice.name/login
    + https://nexus.dhsice.name
    
-Previous Lesson: [Prerequisites](./Lesson-01.md) | Next Lesson: [Terraform](./Lesson-03.md)
+Previous Lesson: [Lesson-01 Prerequisites](./Lesson-01.md) | Next Lesson: [Lesson-03 Terraform](./Lesson-03.md)
