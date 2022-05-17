@@ -9,6 +9,10 @@ and software requirements like Git and IntelliJ then will move into launching an
 AWS instance using Terraform, then using Ansible to provision this instance, and
 finally to automating this process with Jenkins.
 
+# By the end of this Course
+This course should teach you the basic tools that we mainly use for DevOps at Steampunk, but on top of that
+you should be able to troubleshoot these tools and read their documentation if you don't know how to already.
+
 ## Table of Contents
 
 + [Lesson-01 Prerequisites](./Lesson-01.md)

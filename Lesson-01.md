@@ -1,6 +1,9 @@
 # Prerequisites
 
 ## Installing IntelliJ
+WHY INTELLIJ -- IntelliJ is an IDE created by JetBrains. IntelliJ has a lot of plugins that make it extremely useful to us. 
+For one, when you use GIT and connect it to IntelliJ its extremely easy to interact with your repo from the IDE UI. 
+There are Terraform, YAML, and bracket plugins that make it easier to keep track of the errors in your code. 
 
 1. Download Intellij Community Edition at the following link: 
    https://www.jetbrains.com/idea/download/#section=windows

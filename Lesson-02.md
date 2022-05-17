@@ -1,6 +1,8 @@
 # Local Setup
 
 ## Installing AWS CLI and WireGuard
+These are particular to Steampunk, you will have to reach out to Punks to finish this portion of the course.
+This is going to be where we may have to figure out billing codes if you haven't already. 
 
 ### AWS CLI 
 

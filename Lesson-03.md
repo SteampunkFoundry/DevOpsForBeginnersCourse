@@ -2,11 +2,12 @@
 
 ## Overview
 
-Terraform is an Infrastructure as Code (IaC) tool used to define, provision, and create
+Terraform is the industry standard for an Infrastructure as Code (IaC) tool used to define, provision, and create
 cloud infrastructure. Terraform has nearly endless capabilities, including configuring
 compute instances, storage, and networking in order to customize cloud infrastructure as 
 needed. Terraform has many "providers", each with its own capabilities and specifications.
 Terraform code is written in a declarative language, called HashiCorp Configuration Language (HCL).
+
 
 For this lesson we will be using the [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) 
 provider in order to launch an Ubuntu Amazon Elastic Cloud Compute (EC2) instance in Steampunk's 
